@@ -33,7 +33,19 @@ const GestionMenus = ()=> {
 
     return (
         <div>
-            <h1>LISTES DES CREPES, GALETTES ET BOISSONS</h1>
+             <div className="banner">
+            {/* insertion Triskell.jpg du fichier src/images*/}
+            <img id="triskell" src="images/banner.png" alt="Triskell" />
+        {/* Vous pouvez également ajouter un fond ici */}
+        </div>
+       
+        <div className="bodyList">
+            <h1>LISTES DES PRODUITS</h1>
+
+            <div className="buttons">
+            <button className="addButton"><Link to="/ajout" id="addBtn">AJOUT AU MENU</Link></button> 
+            </div>
+
             <div className="listMenu">
                 {menus.map(menu => (
                     <div className="item" key={menu.id}>
@@ -43,13 +55,16 @@ const GestionMenus = ()=> {
                             <li>catégorie : {menu.type}</li>
                             <li>prix : {menu.price} €</li>
                         </ul>
+                        <div className="buttons">
                         <button className="deleteBtn"onClick={()=>handleDelete(menu.id)}>SUPPRIMER</button>
-                        <button className="updateBtn"><Link to={`/modif/${menu.id}`}>MODIFIER</Link></button>
+                        <button className="updateBtn"><Link to={`/modif/${menu.id}`} id="btn" >MODIFIER</Link></button>
+                        </div>
                     </div>
                     
                 ))}
             </div>
-            <button><Link to="/ajout">AJOUT AU MENU</Link></button>          
+                     
+        </div>
         </div>
     );
 };
