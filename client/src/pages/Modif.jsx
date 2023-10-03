@@ -40,18 +40,32 @@ const Modif = () => {
      }
 
     return (
+    <div>
+
+        <div className="banner">
+            <img id="triskell" src="/images/banner.png" alt="banner" />
+        </div>
+        
         <div className="form">
             <h1>MODIFICATION DANS LE MENU</h1>
+
+            <div className="mainForm">
             <input type="text" placeholder="nom" onChange={handleChange} name="name"/>
             <input type="text" placeholder="categorie" onChange={handleChange} name="type"/>
             <input type="number" placeholder="prix" onChange={handleChange} name="price" />
-            <button onClick={handleClick}>ENVOYER</button>
 
-            <button onClick={handleClick}>MODIFIER</button>
+            <button id="sendBtn" onClick={handleClick}>ENVOYER</button>
+            </div>
+            <div className="buttons">
+            <button id="updateBtn" onClick={handleClick}>MODIFIER</button>
             {error && "Something went wrong!"}
-            <Link to="/">RETOUR LISTE</Link>
-           
+            <button id="backBtn" ><Link to="/">RETOUR LISTE</Link></button>
+            </div>
+
         </div>
+    </div>
+       
+        
     );
 };
 

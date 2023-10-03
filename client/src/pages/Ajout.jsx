@@ -35,7 +35,7 @@ const Ajout = () => {
         {/* Banner */}
         <div className="banner">
             {/* insertion Triskell.jpg du fichier src/images*/}
-            <img id="triskell" src="images/banner.png" alt="Triskell" />
+            <img id="triskell" src="images/banner.png" alt="banner" />
         {/* Vous pouvez également ajouter un fond ici */}
         </div>
         <div className="form">

@@ -1,6 +1,5 @@
 body {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
+  font-family: 'Lilita One', cursive;
 }
 
 
@@ -16,7 +15,13 @@ h1 {
   font-size: clamp(15px, 2vw, 25px);
 }
 
-
+.mainForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: clamp(25px, 2vw, 50px);
+  margin-bottom: clamp(15px, 2vw, 50px);
+}
 
 a {
   text-decoration: none;
@@ -36,12 +41,15 @@ a {
   border-radius: 5%;
   cursor: pointer;
   padding: clamp(5px, 2vw, 10px);
+  margin-top: 10px;
   margin-right: 5px;
   background-color: #3B3939;
   color: #F1BB46;
 }
 
-#backBtn {
+#backBtn,
+#updateBtn {
+  margin-top: 10px;
   font-size: clamp(8px, 2vw, 15px);
   border-radius: 5%;
   cursor: pointer;
@@ -81,6 +89,7 @@ a {
   justify-content: center;
   align-items: center;
   margin-top: clamp(10px, 2vw, 20px);
+  margin-bottom: clamp(10px, 2vw, 30px);
 }
 
 
@@ -123,6 +132,7 @@ input {
   margin-right: clamp(10px, 2vw, 20px);
   height: clamp(20px, 3vw, 50px);
   width: clamp(100px, 15vw, 200px);
+  margin-top: clamp(10px, 2vw, 20px);
 }
 
 .inputs {
@@ -142,7 +152,7 @@ ul {
 }
 
 li {
-  font-size: clamp(16px, 2vw, 35px);
+  font-size: clamp(12px, 2vw, 35px);
   list-style-type: none;
 
 }

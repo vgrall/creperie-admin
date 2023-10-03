@@ -35,7 +35,7 @@ const GestionMenus = ()=> {
         <div>
              <div className="banner">
             {/* insertion Triskell.jpg du fichier src/images*/}
-            <img id="triskell" src="images/banner.png" alt="Triskell" />
+            <img id="triskell" src="images/banner.png" alt="banner" />
         {/* Vous pouvez également ajouter un fond ici */}
         </div>
        
@@ -59,6 +59,7 @@ const GestionMenus = ()=> {
                         <button className="deleteBtn"onClick={()=>handleDelete(menu.id)}>SUPPRIMER</button>
                         <button className="updateBtn"><Link to={`/modif/${menu.id}`} id="btn" >MODIFIER</Link></button>
                         </div>
+
                     </div>
                     
                 ))}
